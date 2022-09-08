@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+  .App {
+    @apply md:flex m-auto scroll-smooth
+  }
+  .dark {
+    @apply bg-black text-white
+  }
+  .button {
+    @apply opacity-80 flex gap-1 border-2 dark:border-white border-black p-3 rounded-lg hover:border-white hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white 
+  }
+  .mobilenav {
+    @apply md:hidden h-[100vh] w-full z-[999] fixed top-0 left-0 bg-[#7d7979]/[.3] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] overflow-y-hidden
+  }
+  .formelement {
+    @apply p-6 bg-grey font-body rounded focus:outline-none dark:text-black
+  }
+  .mode {
+    @apply flex gap-2 items-center text-sm cursor-pointer hover:font-bold mt-5 p-2 rounded border-2 border-grey shadow-xl dark:text-white
+  }
+}
