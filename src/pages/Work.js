@@ -63,7 +63,7 @@ export default function Work() {
         </div>
 
         <div className='mt-10 lg:px-10'>
-          <ul className='grid px-5 pb-5 lg:px-0 lg:grid-cols-3 gap-4'>
+          <ul className='grid px-5 pb-5 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {projects.map((project) => (
               <li className='flex flex-col rounded bg-grey border-2 p-3 border-grey shadow-lg dark:bg-black' key={project.id}>
                   <h3 className='font-body font-bold text-xl'>{project.title}</h3>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTheme } from '../hooks/useTheme' 
 import Emmanuel from '../assets/emmanuel.jpg'
 
@@ -35,8 +34,7 @@ const navitems = [
     },
 ]
 
-export default function Sidebar() {
-    const [nav, setNav] = useState(false);
+export default function Sidebar({ toggleNav, nav }) {
     const { changeMode, mode } = useTheme()
   
 
@@ -45,9 +43,9 @@ export default function Sidebar() {
     }
 
   return (
-    <div className={`md:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
-        <div className='md:hidden py-3 fixed w-full z-10 bg-white dark:bg-black flex items-center justify-between px-5'>
-            <svg onClick={() => setNav(true)} className='block h-6 w-6 ml-5 cursor-pointer' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <div className={`fixed z-20 overflow-y-hidden lg:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
+        <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-black flex items-center justify-between px-5'>
+            <svg onClick={(e) => toggleNav(e)} className='block h-6 w-6 ml-5 cursor-pointer' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
@@ -56,7 +54,7 @@ export default function Sidebar() {
                 <p className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</p>
             </div>
         </div>
-    <div className='dark:bg-gray-900 hidden md:flex bg-grey h-[100%] flex-col items-center'>
+    <div className='dark:bg-gray-900 hidden lg:flex bg-grey h-[100%] flex-col items-center'>
 
         <div className='flex flex-col items-center gap-2'>
             <div>
@@ -96,12 +94,12 @@ export default function Sidebar() {
                     <h2 className='text-center font-body font-bold text-2xl mt-3'>Emmanuel Adisa</h2>
                     <p className='text-center font-body text-sm'><span className='font-light text-[#2c98f0]'>FRONTEND WEB DEVELOPER</span><br /> IN NIGERIA.</p>
                 </div>
-                    <svg onClick={() => setNav(false)} className='absolute cursor-pointer top-8 right-8 h-10 w-10' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg onClick={(e) => toggleNav(e)} className='absolute cursor-pointer top-8 right-8 h-10 w-10' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     <div className='flex flex-col gap-5 mt-28 px-10 items-center'>
                         {navitems.map((nav) => (
-                                <a onClick={() => setNav(false)} key={nav.number} className= 'font-body' href={nav.path}>
+                                <a onClick={(e) => toggleNav(e)} key={nav.number} className= 'font-body' href={nav.path}>
                                     {nav.text}
                                 </a>
                             ))}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 //pages
 import Home from './pages/Home'
@@ -12,10 +12,16 @@ import Contact from './pages/Contact'
 import Sidebar from "./components/sidebar";
 
 function App() {
+  const [nav, setNav] = useState(false);
+
+  const toggleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className="App">
-      <Sidebar />
-      <div className="overflow-y-auto overscroll-y-contain md:w-3/4 ml-auto">
+      <Sidebar toggleNav={toggleNav} nav={nav}/>
+      <div className={nav ? "lg:w-3/4 ml-auto h-[100vh] overflow-y-hidden" : "lg:w-3/4 ml-auto h-[100vh]"}>
         <Home />
         <About />
         <Education />
