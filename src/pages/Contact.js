@@ -48,7 +48,7 @@ export default function Contact() {
               contactinfo.map((item) => (
                 <div key={item.id} className='flex gap-4 p-6 bg-grey dark:border-white dark:border-2 rounded'>
                   <img className='h-6 w-6' src={item.img} alt='' />
-                <a className='hover:text-[#2c98f0] font-body dark:text-black' href={item.link}>{item.text}</a>
+                <a className='hover:text-[#2c98f0] font-body dark:text-black' href={item.link} target="_blank" rel="noopener noreferrer">{item.text}</a>
               </div>
               ))
             }

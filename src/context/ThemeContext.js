@@ -11,12 +11,16 @@ const themeReducer = (state, action) => {
     }
 }
 
+const mode = localStorage.getItem("mode") === null ? 'dark' : localStorage.getItem("mode");
+//console.log(mode);
+
 export function ThemeProvider({ children }) {
     const [state, dispatch] = useReducer(themeReducer, {
-        mode: 'light'
+        mode: mode
     })
     const changeMode = (mode) => {
-        dispatch({type: 'CHANGE_MODE', payload: mode})
+        dispatch({type: 'CHANGE_MODE', payload: mode});
+        localStorage.setItem("mode", mode)
     }
 
     return (

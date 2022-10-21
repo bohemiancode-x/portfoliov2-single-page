@@ -39,7 +39,8 @@ export default function Sidebar({ toggleNav, nav }) {
   
 
     const toggleMode = () => {
-        changeMode(mode === 'dark' ? 'light' : 'dark')
+        changeMode(mode === 'dark' ? 'light' : 'dark');
+        //localStorage.setItem("mode", mode)
     }
 
   return (
@@ -99,7 +100,7 @@ export default function Sidebar({ toggleNav, nav }) {
                     </svg>
                     <div className='flex flex-col gap-5 mt-20 px-10 items-center'>
                         {navitems.map((nav) => (
-                                <a onClick={(e) => toggleNav(e)} key={nav.number} className= 'font-body' href={nav.path}>
+                                <a onClick={(e) => toggleNav(e)} key={nav.number} className= 'font-body font-bold hover:opacity-50' href={nav.path}>
                                     {nav.text}
                                 </a>
                             ))}

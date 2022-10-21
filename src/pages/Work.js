@@ -84,7 +84,7 @@ export default function Work() {
                   <h3 className='font-body font-bold text-xl'>{project.title}</h3>
                   <p className='my-3 text-sm font-body opacity-70'>{project.info}</p>
                   <div className='flex mt-auto gap-2'>
-                    <a className='' href={project.link}>
+                    <a className='' href={project.link} target="_blank" rel="noopener noreferrer">
                       <button className=' font-body flex items-center justify-center gap-2 rounded border-2 border-white p-2 hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white'>
                         demo
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
@@ -92,7 +92,7 @@ export default function Work() {
                         </svg>
                       </button>
                     </a>
-                    <a className='' href={project.git}>
+                    <a className='' href={project.git} target="_blank" rel="noopener noreferrer">
                       <button className='font-body flex items-center justify-center gap-2 rounded border-2 border-white p-2 hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white'>
                         source code
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
