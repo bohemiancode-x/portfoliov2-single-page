@@ -50,10 +50,10 @@ export default function Sidebar({ toggleNav, nav }) {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
-            <div onClick={toggleMode} className='mode mt-0'>
+            <button onClick={toggleMode} className='mode mt-0'>
                 <img src={ mode === 'dark' ? "./img/light_mode_white.svg" : "./img/darkmode.svg" } alt="mode" className='h-5' />
-                <p className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</p>
-            </div>
+                <span className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</span>
+            </button>
         </div>
     <div className='dark:bg-gray-900 hidden lg:flex bg-grey h-[100%] flex-col items-center'>
 
@@ -75,10 +75,10 @@ export default function Sidebar({ toggleNav, nav }) {
             </ul>
         </div>
 
-        <div onClick={toggleMode} className='mode'>
+        <button onClick={toggleMode} className='mode'>
             <img src={ mode === 'dark' ? "./img/light_mode_white.svg" : "./img/darkmode.svg" } alt="mode" className='h-5' />
-            <p className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</p>
-        </div>
+            <span className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</span>
+        </button>
 
         <div className='mt-10 opacity-50'>
             <p className='font-body text-sm'>&#169; Copyright 2022.</p>

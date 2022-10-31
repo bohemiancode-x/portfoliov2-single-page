@@ -1,9 +1,5 @@
 import React from 'react'
 import { useTheme } from "../hooks/useTheme";
-import emailsvg from '../assets/email.svg'
-import githubsvg from '../assets/github-brands.svg'
-import twittersvg from '../assets/twitter-brands.svg'
-import linkedinsvg from '../assets/linkedin.svg'
 
 const contactinfo = [
   {
@@ -54,7 +50,7 @@ export default function Contact() {
             }
           </div>
 
-          <div className='lg:w-[50%] lg:py-0 lg:px-0 py-5 px-10'>
+          <div className='hidden lg:w-[50%] lg:py-0 lg:px-0 py-5 px-10'>
             <form className='flex flex-col px-5 gap-4'>
               <input className='formelement' type="text" placeholder='Name' required/>
               <input className='formelement' type="email" placeholder='Email' required/>

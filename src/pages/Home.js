@@ -1,4 +1,4 @@
-import Hero from '../assets/hero.png'
+import Hero from '../assets/heroNew.png'
 import { useTheme } from "../hooks/useTheme";
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import pdf from '../assets/resume.pdf'
@@ -28,7 +28,7 @@ export default function Home() {
                 </a>
             </div>
 
-            <div className='lg:w-[80%] w-full top-20 lg:top-0 relative lg:mt-auto lg:left-20'>
+            <div className='px-5 lg:px-0 lg:w-[80%] w-full top-20 lg:top-0 relative lg:mt-auto lg:left-20'>
                 <img className='h-full w-full' src={Hero} alt="hero" />
             </div>
 

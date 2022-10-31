@@ -5,7 +5,7 @@ export default function About() {
     const { mode } = useTheme();
 
   return (
-    <div id='about' className={`md:py-20 ${mode}`}>
+    <div id='about' className={`py-10 md:py-20 ${mode}`}>
         <div className='pt-5 px-10'>
             <h3 className='text-sm font-body opacity-50 tracking-widest'>ABOUT ME</h3>
             <h2 className='mt-5 font-[serif] tracking-widest text-2xl font-bold'>WHO AM I? </h2>

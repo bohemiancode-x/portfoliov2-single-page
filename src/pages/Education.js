@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTheme } from "../hooks/useTheme";
 import {
   Accordion,
@@ -45,13 +45,13 @@ export default function Education() {
           <Accordion  allowZeroExpanded className='mt-5'>
             {education.map((item) => (
                   <AccordionItem key={item.id} className='mt-3'>
-                  <AccordionItemHeading className='flex justify-between lg:w-3/4 h-[3rem] p-3 items-center rounded bg-grey dark:bg-gray-400'>
+                  <AccordionItemHeading className='flex justify-between lg:w-3/4 h-[3rem] p-4 items-center rounded bg-grey dark:bg-black dark:border-grey dark:border-2'>
                       <AccordionItemButton className='font-body'>
                           {item.header}
                       </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                      <p className='font-body lg:w-3/4 p-3 mt-1 rounded border-2 border-grey'>
+                      <p className='font-body lg:w-3/4 p-3 mt-1 rounded border-2 dark:bg-[#777] border-grey'>
                           {item.info}
                       </p>
                   </AccordionItemPanel>
