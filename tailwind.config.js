@@ -13,7 +13,13 @@ module.exports = {
         colors: {
           grey: '#f2f3f7'
       },
+      aria: {
+        asc: 'sort="ascending"',
+        desc: 'sort="descending"',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-aria-attributes')
+  ],
 }

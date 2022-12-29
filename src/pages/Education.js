@@ -8,6 +8,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 
+
 const education = [
   {
     id: 1,
@@ -35,7 +36,7 @@ export default function Education() {
   const { mode } = useTheme();
 
   return (
-    <div id='education' className={`py-20 ${mode}`}>
+    <div id='education' className={`py-20 px-2 lg:px-0 ${mode}`}>
         <div className='px-5 lg:px-10'>
           <h3 className='text-sm font-body opacity-50 tracking-widest'>EDUCATION</h3>
           <h2 className='mt-5 font-[serif] tracking-widest text-2xl font-bold'>EDUCATION</h2>
@@ -45,8 +46,8 @@ export default function Education() {
           <Accordion  allowZeroExpanded className='mt-5'>
             {education.map((item) => (
                   <AccordionItem key={item.id} className='mt-3'>
-                  <AccordionItemHeading className='flex justify-between lg:w-3/4 h-[3rem] p-4 items-center rounded bg-grey dark:bg-black dark:border-grey dark:border-2'>
-                      <AccordionItemButton className='font-body'>
+                  <AccordionItemHeading aria-level={3} className='flex justify-between lg:w-3/4 h-[3rem] py-6 px-1 items-center rounded bg-grey dark:bg-[#202124] dark:border-grey dark:border-2'>
+                      <AccordionItemButton className='accordion_button'>
                           {item.header}
                       </AccordionItemButton>
                   </AccordionItemHeading>

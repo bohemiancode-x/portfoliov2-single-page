@@ -1,38 +1,9 @@
 import { useTheme } from '../hooks/useTheme' 
 import Emmanuel from '../assets/emmanuel.jpg'
+import { Link } from 'react-scroll'
+import Mobilenav from './mobilenav'
+import { navitems } from '../data/navItems'
 
-const navitems = [
-    {
-        number: '0',
-        text: 'HOME',
-        path: '#home'
-    },
-    {
-        number: '1',
-        text: 'ABOUT',
-        path: '#about'
-    },
-    {
-        number: '2',
-        text: 'EDUCATION',
-        path: '#education'
-    },
-    {
-        number: '3',
-        text: 'WORK',
-        path: '#work'
-    },
-    {
-        number: '4',
-        text: 'CONTACT',
-        path: '#contact'
-    },
-    {
-        number:'5',
-        text: 'BLOG',
-        path: '#blog'
-    },
-]
 
 export default function Sidebar({ toggleNav, nav }) {
     const { changeMode, mode } = useTheme()
@@ -45,9 +16,9 @@ export default function Sidebar({ toggleNav, nav }) {
 
   return (
     <div className={`fixed z-20 overflow-y-hidden lg:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
-        <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-black flex items-center justify-between px-5'>
-            <svg onClick={(e) => toggleNav(e)} className='block h-6 w-6 ml-5 cursor-pointer' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-[#202124] flex items-center justify-between px-5'>
+            <svg onClick={(e) => toggleNav(e)} className='block h-6 w-6 ml-5 cursor-pointer' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
             <button onClick={toggleMode} className='mode mt-0'>
@@ -55,22 +26,22 @@ export default function Sidebar({ toggleNav, nav }) {
                 <span className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</span>
             </button>
         </div>
-    <div className='dark:bg-gray-900 hidden lg:flex bg-grey h-[100%] flex-col items-center'>
+    <div className='dark:bg-[#202124] dark:border-r-2 dark:border-[#7d7979] hidden lg:flex bg-grey h-[100%] flex-col items-center'>
 
         <div className='flex flex-col items-center gap-2'>
             <div>
                 <img className='rounded-full h-28 mt-20' src={Emmanuel} alt="img" />
             </div>
             <h2 className='text-center font-body font-bold text-2xl mt-3'>Emmanuel Adisa</h2>
-            <p className='text-center font-body text-sm'><span className='font-light text-[#2c98f0]'>FRONTEND WEB DEVELOPER</span><br /> IN NIGERIA.</p>
+            <p className='text-center font-body text-sm'><span className='font-light text-[#9a3a9a]'>FRONTEND WEB DEVELOPER</span><br /> IN NIGERIA.</p>
         </div>
 
         <div>
-            <ul className='flex flex-col mt-10 gap-5'>
+            <ul className='flex flex-col w-[10em] text-[#7d7979] text-center mt-10 gap-5'>
                 {navitems.map((nav) => (
-                    <a className='font-body hover:opacity-50' key={nav.number} href={nav.path}>
+                    <Link className='font-body tracking-wider cursor-pointer' spy={true} smooth={true} activeClass="active" offset={0} duration={500} key={nav.number} to={nav.path}>
                         {nav.text}
-                    </a>
+                    </Link>
                 ))}
             </ul>
         </div>
@@ -87,25 +58,7 @@ export default function Sidebar({ toggleNav, nav }) {
 
     </div>
 
-    <div className={nav ? 'mobilenav' : 'hidden'}>
-                <div className='flex flex-col items-center gap-2'>
-                    <div>
-                        <img className='rounded-full h-28 mt-20' src={Emmanuel} alt="img" />
-                    </div>
-                    <h2 className='text-center font-body font-bold text-2xl mt-3'>Emmanuel Adisa</h2>
-                    <p className='text-center font-body text-sm'><span className='font-light text-[#2c98f0]'>FRONTEND WEB DEVELOPER</span><br /> IN NIGERIA.</p>
-                </div>
-                    <svg onClick={(e) => toggleNav(e)} className='absolute cursor-pointer top-8 right-8 h-10 w-10' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <div className='flex flex-col gap-5 mt-20 px-10 items-center'>
-                        {navitems.map((nav) => (
-                                <a onClick={(e) => toggleNav(e)} key={nav.number} className= 'font-body font-bold hover:opacity-50' href={nav.path}>
-                                    {nav.text}
-                                </a>
-                            ))}
-                     </div>
-        </div>
+    <Mobilenav nav={nav} toggleNav={toggleNav} />
     </div>
   )
 }

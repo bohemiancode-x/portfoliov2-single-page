@@ -9,18 +9,24 @@
     @apply flex m-auto scroll-smooth 
   }
   .dark {
-    @apply bg-black text-white
+    @apply bg-[#202124] text-white
   }
   .button {
     @apply opacity-80 flex gap-1 border-2 dark:border-white border-black p-3 rounded-lg hover:border-white hover:text-white hover:bg-black dark:hover:text-black dark:hover:bg-white 
   }
+  .accordion_button {
+    @apply font-body text-sm md:text-lg flex flex-row-reverse justify-between items-center w-full before:content-[""] before:inline-block before:h-[10px] before:w-[10px] before:border-[grey] dark:before:border-[white] before:mr-[12px] before:border-b-2 before:border-r-2 before:rotate-[45deg] aria-expanded:before:rotate-[-135deg]
+  }
   .mobilenav {
-    @apply ease-in duration-500 lg:hidden h-[100vh] w-full z-[999] fixed top-0 left-0 bg-[#7d7979]/[.3] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] overflow-y-hidden
+    @apply ease-in duration-500 lg:hidden h-[100vh] w-full z-[999] fixed top-0 left-0 bg-[#7d7979]/[.3] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] overflow-y-hidden 
   }
   .formelement {
     @apply p-6 bg-grey font-body rounded focus:outline-none dark:text-black
   }
   .mode {
-    @apply flex gap-2 items-center text-sm cursor-pointer hover:font-bold mt-5 p-2 rounded border-2 border-grey shadow-xl dark:text-white
+    @apply flex gap-2 items-center text-sm cursor-pointer mt-5 p-2 rounded border-2 border-grey shadow-xl dark:text-white
+  }
+  .active {
+    @apply opacity-100 text-[#9a3a9a] dark:text-white text-xl
   }
 }

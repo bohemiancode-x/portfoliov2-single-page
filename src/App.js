@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useInView } from 'react-intersection-observer';
 
 //pages
 import Home from './pages/Home'
@@ -13,6 +14,7 @@ import Sidebar from "./components/sidebar";
 
 function App() {
   const [nav, setNav] = useState(false);
+  const {ref: myRef, inView: pageIsVisible} = useInView()
 
   const toggleNav = () => {
     setNav(!nav)
@@ -21,9 +23,9 @@ function App() {
   return (
     <div className="App">
       <Sidebar toggleNav={toggleNav} nav={nav}/>
-      <div className={nav ? "lg:w-3/4 ml-auto h-[100vh] overflow-y-hidden" : "lg:w-3/4 ml-auto h-[100vh]"}>
-        <Home />
-        <About />
+      <div className={nav ? "lg:w-3/4 ml-auto h-[100vh]" : "lg:w-3/4 ml-auto h-[100vh]"}>
+        <Home pageIsVisible={pageIsVisible} />
+        <About myRef={myRef} />
         <Education />
         <Work />
         <Contact />
