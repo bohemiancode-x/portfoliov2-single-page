@@ -39,7 +39,7 @@ export default function Sidebar({ toggleNav, nav }) {
         <div>
             <ul className='flex flex-col w-[10em] text-[#7d7979] text-center mt-10 gap-5'>
                 {navitems.map((nav) => (
-                    <Link className='font-body tracking-wider cursor-pointer' spy={true} smooth={true} activeClass="active" offset={0} duration={500} key={nav.number} to={nav.path}>
+                    <Link className='font-body tracking-wider cursor-pointer hover:text-black dark:hover:text-[white]' spy={true} smooth={true} activeClass="active" offset={0} duration={500} key={nav.number} to={nav.path}>
                         {nav.text}
                     </Link>
                 ))}
