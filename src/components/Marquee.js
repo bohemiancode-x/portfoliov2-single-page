@@ -25,8 +25,6 @@ const Marquee = () => {
     };
   }, []);
 
-  console.log(screenWidth)
-
   useEffect(() => {
     marqueeInitialSet();
     marqueeTween.current && marqueeTween.current.pause().kill();
