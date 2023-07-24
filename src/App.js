@@ -26,8 +26,8 @@ function App() {
       <div className={nav ? "lg:w-3/4 ml-auto h-[100vh]" : "lg:w-3/4 ml-auto h-[100vh]"}>
         <Home pageIsVisible={pageIsVisible} />
         <About myRef={myRef} />
-        <Education />
         <Work />
+        <Education />
         <Contact />
         <Blog />
       </div>

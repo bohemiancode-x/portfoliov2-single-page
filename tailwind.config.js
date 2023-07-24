@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
         fontFamily: {
-          body: ['Quicksand'],
+          body: ['Satoshi'],
           others: ['Roboto']
         },
         colors: {

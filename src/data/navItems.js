@@ -11,13 +11,13 @@ export const navitems = [
     },
     {
         number: '2',
-        text: 'EDUCATION',
-        path: 'education'
+        text: 'WORK',
+        path: 'work'
     },
     {
         number: '3',
-        text: 'WORK',
-        path: 'work'
+        text: 'EDUCATION',
+        path: 'education'
     },
     {
         number: '4',

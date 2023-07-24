@@ -10,7 +10,7 @@ export default function Mobilenav({ nav, toggleNav}) {
                         <img className='rounded-full h-28 mt-20' src={Emmanuel} alt="img" />
                     </div>
                     <h2 className='text-center font-body font-bold text-2xl mt-3'>Emmanuel Adisa</h2>
-                    <p className='text-center font-body text-sm'><span className='dark:text-black font-bold text-[#9a3a9a]'>FRONTEND WEB DEVELOPER</span><br /> IN NIGERIA.</p>
+                     
                 </div>
                     <svg onClick={(e) => toggleNav(e)} className='absolute cursor-pointer top-8 right-8 h-10 w-10' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -22,6 +22,10 @@ export default function Mobilenav({ nav, toggleNav}) {
                                 </Link>
                             ))}
                      </div>
+                     <div className='mt-[30%] flex flex-col items-center w-full opacity-50'>
+                        <p className='font-body text-sm'>&#169; Copyright 2023.</p>
+                        <p className='font-body text-sm'>All rights reserved.<br /> BohemianCode-x.</p>
+                    </div>
         </div>
   )
 }

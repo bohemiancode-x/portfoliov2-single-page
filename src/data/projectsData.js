@@ -1,5 +1,12 @@
 export const projectsData = [
     {
+      id: 6,
+      title: 'NFT Dapp with NextJS, hardhat and solidity',
+      info: 'One of my first web3 projects that mints 1 NFT per transaction using solidity and nextjs.',
+      link: 'https://nft-dapp-9oa4.vercel.app/',
+      git: 'https://nft-dapp-9oa4.vercel.app/'
+    },
+    {
         id: 1,
         title:'Rock, Paper, Scissors game',
         info: 'A simple rock, paper and scissors game developed with the ReactJS framework and tailwindCSS.',
@@ -33,13 +40,6 @@ export const projectsData = [
         info: 'Built an interactive comments page using ReactJS tools, TailwindCSSand Redux toolkit. Deployed via Vercel.',
         link: 'http://interactive-comments-section-seven-black.vercel.app/',
         git: 'https://github.com/bohemiancode-x/interactive-comments-section'
-      },
-      {
-        id: 6,
-        title: 'MyNaira App with react',
-        info: 'A CRUD react project infused with Firestore authentication and database functions to show real time data (transaction tracking) by various authenticated users. Project was supervised by Shaun J. Pelling (NetNinja UK).',
-        link: 'https://project-my-naira-react-app.vercel.app/',
-        git: 'https://github.com/bohemiancode-x/Project-myNaira-react-app'
       },
       {
         id: 7,
