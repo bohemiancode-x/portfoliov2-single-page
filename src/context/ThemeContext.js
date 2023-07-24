@@ -11,7 +11,8 @@ const themeReducer = (state, action) => {
     }
 }
 
-const mode = localStorage.getItem("mode") === null ? 'dark' : localStorage.getItem("mode");
+//const mode = localStorage.getItem("mode") === null ? 'dark' : localStorage.getItem("mode");
+const mode = localStorage.getItem("mode") === null ? 'dark' : 'dark';
 //console.log(mode);
 
 export function ThemeProvider({ children }) {
