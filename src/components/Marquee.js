@@ -68,7 +68,7 @@ const Marquee = () => {
     }
     return marqueeTexts.map((e, i) => (
       <p
-        className="font-body items-center text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold pin-1 absolute min-w-screen"
+        className="font-body items-center text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold pin-1 absolute"
         key={`marquee-${i}`}
         ref={(el) => marqueeElementsRefHandler(el, i)}
       >
@@ -78,7 +78,7 @@ const Marquee = () => {
   };
   return (
     <div
-      className="relative w-full mt-5 py-5 bg-[#777] font-body text-[#F7F7F7]/40 flex justify-between overflow-hidden items-center">
+      className="relative w-screen mt-5 py-5 bg-[#777] font-body text-[#F7F7F7]/40 flex justify-between overflow-hidden items-center">
       {renderMarqueeElements()}
     </div>
   );
