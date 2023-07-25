@@ -5,7 +5,7 @@ export default function About({ myRef }) {
     const { mode } = useTheme();
 
   return (
-    <div id='about' className={`py-10 font-body md:py-20 ${mode}`}>
+    <div id='about' className={`py-14 font-body md:py-20 ${mode}`}>
         <div ref={myRef} className='pt-5 px-10'>
             <h3 className='text-sm font-body opacity-50 tracking-widest'>ABOUT ME</h3>
         </div>

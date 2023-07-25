@@ -66,7 +66,7 @@ export default function Home({ pageIsVisible }) {
                 <img className='h-full w-full' src={Hero} alt="hero" />
             </div> */}
 
-            <div className={pageIsVisible ? 'hidden' : 'flex opacity-50 animate-bounce gap-2 items-center absolute bottom-6 right-4'}>
+            <div className={pageIsVisible ? 'hidden' : 'flex opacity-50 animate-bounce gap-2 items-center absolute bottom-2 right-4'}>
                 <p className='text-base font-body lg:text-xl'>scroll down</p>
              <HiChevronDoubleDown className='text-base lg:text-xl'/>
             </div>

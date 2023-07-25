@@ -7,7 +7,6 @@ const marqueeTexts = [
   "TYPESCRIPT",
   "TAILWIND",
   "MATERIAL-UI",
-  "SCSS",
   "SOLIDITY"
 ];
 
@@ -46,7 +45,7 @@ const Marquee = () => {
     gsap.set(marqueeElements.current, {
       xPercent: -100,
       x: function (index) {
-        return (screenWidth / 5) * index;
+        return (screenWidth / 4) * index;
       }
     });
   };
@@ -69,7 +68,7 @@ const Marquee = () => {
     }
     return marqueeTexts.map((e, i) => (
       <p
-        className="text-center font-body text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold absolute pin-l min-w-full"
+        className="font-body items-center text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold pin-1 absolute min-w-screen"
         key={`marquee-${i}`}
         ref={(el) => marqueeElementsRefHandler(el, i)}
       >
@@ -79,7 +78,7 @@ const Marquee = () => {
   };
   return (
     <div
-      className="relative w-full mt-5 py-5 bg-[#777] font-body text-[#F7F7F7]/40 flex overflow-hidden items-center">
+      className="relative w-full mt-5 py-5 bg-[#777] font-body text-[#F7F7F7]/40 flex justify-between overflow-hidden items-center">
       {renderMarqueeElements()}
     </div>
   );

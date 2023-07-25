@@ -15,7 +15,7 @@ export default function Work() {
         <div className='flex flex-col gap-5 px-5 py-5 lg:px-10'>
         <div className='font-body text-[#777]'>
             <h2 className='font-body text-lg md:text-xl lg:text-2xl'> - CTA FINTECH SOLUTIONS <span className='font-body'>(March 2023 - July, 2023)</span></h2>
-            <p className='text-sm ml-10 mt-2 font-body w-[50%]'>Developed and maintained web project for a startup fintech solutions company based in South Africa and U.K.</p>
+            <p className='text-sm ml-10 mt-2 font-body w-[75%] md:w-[50%]'>Developed and maintained web project for a startup fintech solutions company based in South Africa and U.K.</p>
             
             <a className='flex italic text-[#fff]/90 hover:text-[#f7f7] gap-1 items-center font-body' href='https://ctafintechsolutions.com' target="_blank" rel="noopener noreferrer">
             go to project 
@@ -26,7 +26,7 @@ export default function Work() {
           </div>
           <div className='font-body text-[#777]'>
             <h2 className='font-body text-lg md:text-xl lg:text-2xl'> - HNG i9 <span className='font-body'>(Nov 2022 - Jan, 2023)</span></h2>
-            <p className='text-sm ml-10 mt-2 font-body w-[50%]'>Worked with a team of front-end developers to build an AI- powered webapp - SpeakBetter (twitter @speakBetterAI). SpeakBetter takes in audio and textual data and points out errors while also returning the correct form</p>
+            <p className='text-sm ml-10 mt-2 font-body w-[75%] md:w-[50%]'>Worked with a team of front-end developers to build an AI- powered webapp - SpeakBetter (twitter @speakBetterAI). SpeakBetter takes in audio and textual data and points out errors while also returning the correct form</p>
             
             <a className='flex italic text-[#fff]/90 hover:text-[#f7f7] gap-1 items-center font-body' href='https://speakbetter.fun' target="_blank" rel="noopener noreferrer">
             go to project 
@@ -37,7 +37,7 @@ export default function Work() {
           </div>
           <div className='font-body text-[#777]'>
             <h2 className='font-body text-lg md:text-xl lg:text-2xl'> - FREELANCE PROJECTS <span className='font-body'>(2021 - Present.)</span></h2>
-            <p className='text-sm ml-10 mt-2 font-body w-[50%]'>Developing front-end features using HTML5, CSS3, JavaScript, React and other tools and frameworks.
+            <p className='text-sm ml-10 mt-2 font-body w-[75%] md:w-[50%]'>Developing front-end features using HTML5, CSS3, JavaScript, React and other tools and frameworks.
             </p>
           </div>
           

@@ -22,8 +22,6 @@ export default function Blog() {
       </div>
 
       <ScrollToTop style={{backgroundColor: "transparent"}} color={mode === 'dark' ? 'white' : 'black'} className='hover:opacity-50 animate-bounce border-2 rounded-full dark:border-white border-black mt-auto ml-auto p-3 cursor-pointer hover:-translate-y-1 flex gap-2 items-center' smooth showunder={160}  />
-            
-
     </div>
   )
 }
