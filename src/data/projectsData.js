@@ -1,10 +1,17 @@
 export const projectsData = [
     {
+      id: 10,
+      title: 'Astro template for a barbershop business',
+      info: 'Built on astro, a landing page template for a haircut service business.',
+      link: 'https://astro-barber-x.vercel.app//',
+      git: 'https://github.com/bohemiancode-x/astro-barber-x'
+    },
+    {
       id: 6,
       title: 'NFT Dapp with NextJS, hardhat and solidity',
-      info: 'One of my first web3 projects that mints 1 NFT per transaction using solidity and nextjs.',
-      link: 'https://nft-dapp-9oa4.vercel.app/',
-      git: 'https://nft-dapp-9oa4.vercel.app/'
+      info: 'Minting 1 NFT per transaction with data stored on IPFS.',
+      link: 'https://ipfs-practical-eta-seven.vercel.app/',
+      git: 'https://github.com/bohemiancode-x/ipfs-practical'
     },
     {
         id: 1,

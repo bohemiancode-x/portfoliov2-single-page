@@ -32,11 +32,17 @@ export default function Sidebar({ toggleNav, nav }) {
     }
 
   return (
-    <div className={`fixed z-20 overflow-y-hidden lg:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
+    <section className='mx-auto'>
+    <div className={`z-20 fixed overflow-y-hidden max-w-lg lg:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
         <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-[#202124] flex items-center justify-between px-5'>
-            <svg onClick={(e) => toggleNav(e)} className='block h-6 w-6 ml-5 cursor-pointer' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+            <div className=''>
+                <button onClick={(e) => toggleNav(e)} data-toggle-nav data-open-nav={nav} className="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative z-[105]">
+                    <span id="line1" class="bg-white/70 w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear"></span> 
+                    <span id="line2" class="bg-white/70 w-6 origin-center  mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span> 
+                    <span id="line3" class="bg-white/70 w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span>                         
+                    <span class="sr-only">togglenav</span>
+                </button>
+            </div>
 
             <div className='flex items-center gap-5'>
                 <a href='https://github.com/bohemiancode-x' target="_blank" rel="noopener noreferrer">
@@ -69,12 +75,7 @@ export default function Sidebar({ toggleNav, nav }) {
                     </Link>
                 ))}
             </ul>
-        </div>
-
-        {/* <button onClick={toggleMode} className='mode'>
-            <img src={ mode === 'dark' ? "./img/light_mode_white.svg" : "./img/darkmode.svg" } alt="mode" className='h-5' />
-            <span className='font-body'>{ mode === 'dark' ? 'Light Mode' : 'Dark mode' }</span>
-        </button> */} 
+        </div> 
 
         <div className='mt-[50%] opacity-50'>
             <p className='font-body text-sm'>&#169; Copyright 2023.</p>
@@ -85,5 +86,7 @@ export default function Sidebar({ toggleNav, nav }) {
 
     <Mobilenav nav={nav} toggleNav={toggleNav} />
     </div>
+
+    </section>
   )
 }

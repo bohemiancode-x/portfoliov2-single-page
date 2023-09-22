@@ -11,7 +11,8 @@ module.exports = {
           others: ['Roboto']
         },
         colors: {
-          grey: '#f2f3f7'
+          grey: '#f2f3f7',
+          body: '#202124'
       },
       aria: {
         asc: 'sort="ascending"',

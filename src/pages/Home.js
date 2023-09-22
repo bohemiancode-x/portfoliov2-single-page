@@ -2,7 +2,6 @@ import { useTheme } from "../hooks/useTheme";
 import { HiChevronDoubleDown } from 'react-icons/hi'
 import { AiFillGithub } from 'react-icons/ai'
 import { Link } from 'react-scroll';
-import pdf from '../assets/resume.pdf'
 import { useEffect, useState } from 'react';
 import Marquee from "../components/Marquee";
 import dayjs from "dayjs";
@@ -26,7 +25,8 @@ export default function Home({ pageIsVisible }) {
     
 
   return (
-        <div id='home' className={`min-h-screen md:h-[100vh] pt-20 lg:pt-0 flex flex-col justify-center overflow-hidden ${mode}`}>
+        <section className={`container ${mode}`}>
+        <div id='home' className={`relative min-h-screen md:h-[100vh] pt-20 lg:pt-0 flex flex-col justify-center overflow-hidden `}>
             <div className="absolute flex items-center gap-5 top-3 right-3">
                 <a href='https://github.com/bohemiancode-x' target="_blank" rel="noopener noreferrer">
                     <AiFillGithub className="h-8 w-8 text-[#777] hover:text-[#fff]" />                
@@ -53,7 +53,7 @@ export default function Home({ pageIsVisible }) {
                     </button>
                     </Link>
                     
-                    <a href={pdf} target="_blank" rel="noopener noreferrer" className='button font-body'>
+                    <a href='https://drive.google.com/file/d/1aziD84c5gHa7Dl2Bw_ZJTWTwRRdQbr6A/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='button font-body'>
                         DOWNLOAD CV
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 md:w-6 md:h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -71,6 +71,8 @@ export default function Home({ pageIsVisible }) {
              <HiChevronDoubleDown className=' text-2xl lg:text-xl'/>
             </div>
         </div>
+
+        </section>
    
   )
 }

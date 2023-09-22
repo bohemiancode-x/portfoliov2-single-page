@@ -10,7 +10,10 @@
 
 @layer components {
   .App {
-    @apply flex m-auto scroll-smooth 
+    @apply flex justify-center mx-auto scroll-smooth dark:bg-[#202124]
+  }
+  .container {
+    @apply max-w-6xl
   }
   .dark {
     @apply bg-[#202124] text-white
@@ -22,7 +25,7 @@
     @apply font-body text-sm md:text-lg flex flex-row-reverse justify-between items-center w-full before:content-[""] before:inline-block before:h-[10px] before:w-[10px] before:border-[grey] dark:before:border-[white] before:mr-[12px] before:border-b-2 before:border-r-2 before:rotate-[45deg] aria-expanded:before:rotate-[-135deg]
   }
   .mobilenav {
-    @apply ease-in duration-500 lg:hidden min-h-screen w-full z-[999] fixed top-0 left-0 bg-[#7d7979]/[.7] backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] overflow-y-hidden 
+    @apply ease-in duration-500 lg:hidden min-h-full w-full z-[999] fixed top-[4rem] left-0 bg-body/[.7] backdrop-blur-[6px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] overflow-y-hidden 
   }
   .formelement {
     @apply p-6 bg-grey font-body rounded focus:outline-none dark:text-black
@@ -36,4 +39,20 @@
   .active {
     @apply opacity-100 text-[#9a3a9a] dark:text-white text-xl
   }
+  .modal-open {
+    overflow: hidden;
+    height: screen;
+    /* backdrop-filter: ; */
+}
+}
+
+[data-toggle-nav][data-open-nav="true"] #line1 {
+  transform: translateY(0.375rem) rotate(40deg);
+}
+[data-toggle-nav][data-open-nav="true"] #line2 {
+  transform: scaleX(0);
+  opacity: 0;
+}
+[data-toggle-nav][data-open-nav="true"] #line3 {
+  transform: translateY(-0.375rem) rotate(-40deg);
 }

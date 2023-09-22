@@ -1042,6 +1042,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.3.4":
+  version "7.22.15"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.15.tgz#38f46494ccf6cf020bd4eed7124b425e83e523b8"
+  integrity sha512-T0O+aa+4w0u06iNmapipJXMV4HoUir03hpx3/YqXXhu9xim3w+dVphjFWl1OH8NbZHw5Lbm9k45drDkgq2VNNA==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/template@^7.18.10", "@babel/template@^7.18.6", "@babel/template@^7.3.3":
   version "7.18.10"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.18.10.tgz#6f9134835970d1dbf0835c0d100c9f38de0c5e71"
@@ -3454,6 +3461,16 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
+d3-ease@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-1.0.5.tgz#8ce59276d81241b1b72042d6af2d40e76d936ffb"
+  integrity sha512-Ct1O//ly5y5lFM9YTdu+ygq7LleSgSE4oj7vUt9tPLHUi8VCV7QoizGpdWRWAwCO9LdYzIrQDg97+hGVdsSGPQ==
+
+d3-timer@^1.0.9:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-1.0.10.tgz#dfe76b8a91748831b13b6d9c793ffbd508dd9de5"
+  integrity sha512-B1JDm0XDaQC+uvo4DT79H0XmBskgS3l6Ve+1SBCfxgmtIb1AVrPIoqd+nPSv+loMX8szQ0sVUhGngL7D5QPiXw==
+
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
@@ -5831,6 +5848,13 @@ jsonpointer@^5.0.0:
     array-includes "^3.1.5"
     object.assign "^4.1.3"
 
+kapellmeister@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/kapellmeister/-/kapellmeister-3.0.1.tgz#419b715cd221acda3db79892caedf63e1c9f7d25"
+  integrity sha512-S7+gYcziMREv8RxG46138mb1O4Xf9II/bCxEJPYkhlZ7PgGWTlicgsyNad/DGc5oEAlWGLXE5ExLbTDVvJmgDA==
+  dependencies:
+    d3-timer "^1.0.9"
+
 kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
@@ -7273,6 +7297,11 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
+react-circular-progressbar@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.1.0.tgz#99e5ae499c21de82223b498289e96f66adb8fa3a"
+  integrity sha512-xp4THTrod4aLpGy68FX/k1Q3nzrfHUjUe5v6FsdwXBl3YVMwgeXYQKDrku7n/D6qsJA9CuunarAboC2xCiKs1g==
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.1.tgz#ba92edb4a1f379bd46ccd6bcd4e7bc398df33e73"
@@ -7340,6 +7369,21 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-lifecycles-compat@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-move@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/react-move/-/react-move-5.2.1.tgz#2098cbb071538a487a815f54b73842c30aaa7628"
+  integrity sha512-2If8uw9jJUQC8KxT1V1bJJ9amDvbHM4zCT42UekmP9KKrkf6elbc1PsXmPprfMjd20PkejtKnvs9T/TTXmTymA==
+  dependencies:
+    "@babel/runtime" "^7.3.4"
+    kapellmeister "^3.0.1"
+    prop-types "^15.7.2"
+    react-lifecycles-compat "^3.0.4"
 
 react-refresh@^0.11.0:
   version "0.11.0"
@@ -7503,6 +7547,11 @@ regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.9:
   version "0.13.9"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
+
+regenerator-runtime@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.14.0.tgz#5e19d68eb12d486f797e15a3c6a918f7cec5eb45"
+  integrity sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==
 
 regenerator-transform@^0.15.0:
   version "0.15.0"

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { useInView } from 'react-intersection-observer';
 
 //pages
@@ -20,16 +20,25 @@ function App() {
     setNav(!nav)
   }
 
+  useEffect(() => {
+    document.body.classList.toggle('modal-open', nav);
+
+    return () => document.body.classList.remove('modal-open');
+}, [nav])
+
   return (
-    <div className="App">
+    <div className="App bg-body">
       <Sidebar toggleNav={toggleNav} nav={nav}/>
-      <div className={nav ? "lg:w-3/4 ml-auto h-[100vh]" : "lg:w-3/4 ml-auto h-[100vh]"}>
+      <div className="lg:w-3/4 ml-auto min-h-[100vh]">
+        <section className="container">
         <Home pageIsVisible={pageIsVisible} />
         <About myRef={myRef} />
         <Work />
         <Education />
         <Contact />
         <Blog />
+
+        </section>
       </div>
     </div>
   );
