@@ -48,7 +48,7 @@ export default function Work() {
         <div className='mt-10 lg:px-10'>
           <h2 className='text-[#777] px-5 pb-5 lg:px-0  text-xl py-3'>PROJECTS</h2>
           <ul className='grid px-5 pb-5 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-            {projectsData.map((project) => (
+            {projectsData.slice(0,4).map((project) => (
               <li className='flex flex-col rounded bg-grey border-2 p-3 border-grey/30 shadow-lg dark:bg-[#202124]' key={project.id}>
                   <h3 className='font-body text-[#fff]/80 font-bold text-xl'>{project.title}</h3>
                   <p className='my-3 text-sm font-body opacity-70'>{project.info}</p>

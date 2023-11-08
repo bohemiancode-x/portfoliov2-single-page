@@ -32,8 +32,8 @@ export default function Sidebar({ toggleNav, nav }) {
     }
 
   return (
-    <section className='mx-auto'>
-    <div className={`z-20 fixed overflow-y-hidden max-w-lg lg:w-1/4 lg:fixed lg:h-[100vh] lg:z-20 ${mode}`}>
+    <section className=''>
+    <div className={`z-20 fixed overflow-y-hidden max-w-lg lg:w-1/4 lg:h-[100vh] lg:z-20 ${mode}`}>
         <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-[#202124] flex items-center justify-between px-5'>
             <div className=''>
                 <button onClick={(e) => toggleNav(e)} data-toggle-nav data-open-nav={nav} className="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative z-[105]">
@@ -77,7 +77,7 @@ export default function Sidebar({ toggleNav, nav }) {
             </ul>
         </div> 
 
-        <div className='mt-[50%] opacity-50'>
+        <div className='mt-[40%] opacity-50'>
             <p className='font-body text-sm'>&#169; Copyright 2023.</p>
             <p className='font-body text-sm'>All rights reserved.<br /> BohemianCode-x.</p>
         </div>

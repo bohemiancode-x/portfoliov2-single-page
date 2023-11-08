@@ -27,18 +27,19 @@ function App() {
 }, [nav])
 
   return (
-    <div className="App bg-body">
-      <Sidebar toggleNav={toggleNav} nav={nav}/>
-      <div className="lg:w-3/4 ml-auto min-h-[100vh]">
-        <section className="container">
-        <Home pageIsVisible={pageIsVisible} />
-        <About myRef={myRef} />
-        <Work />
-        <Education />
-        <Contact />
-        <Blog />
-
-        </section>
+    <div className="bg-body">
+      <div className="max-w-[2060px] App">
+        <Sidebar toggleNav={toggleNav} nav={nav}/>
+        <div className="lg:max-w-[75%] ml-auto w-full min-h-[100vh]">
+          <section className="">
+          <Home pageIsVisible={pageIsVisible} />
+          <About myRef={myRef} />
+          <Work />
+          <Education />
+          <Contact />
+          <Blog />
+          </section>
+        </div>
       </div>
     </div>
   );

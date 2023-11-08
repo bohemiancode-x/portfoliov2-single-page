@@ -10,10 +10,13 @@
 
 @layer components {
   .App {
-    @apply flex justify-center mx-auto scroll-smooth dark:bg-[#202124]
+    @apply  flex mx-auto scroll-smooth dark:bg-[#202124]
   }
   .container {
-    @apply max-w-6xl
+    @apply w-full
+  }
+  .bordered {
+    @apply border-2 border-[red]
   }
   .dark {
     @apply bg-[#202124] text-white
