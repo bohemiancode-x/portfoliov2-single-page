@@ -3,6 +3,8 @@ import { navitems } from '../data/navItems'
 import { Link } from 'react-scroll'
 
 export default function Mobilenav({ nav, toggleNav}) {
+    const year = new Date().getFullYear()
+
   return (
     <div className={nav ? 'mobilenav translate-x-[0rem] ease-out transition opacity-100 duration-[600ms]' : 'mobilenav translate-x-[-120rem] transition ease-in duration-500'}>
             <div className='py-8 mx-6 backdrop-blur-2xl bg-body border-[1px] border-[#777]'>
@@ -23,7 +25,7 @@ export default function Mobilenav({ nav, toggleNav}) {
 
             </div>
                      <div className='mt-[60%] flex flex-col items-center w-full opacity-50'>
-                        <p className='font-body text-[10px]'>&#169; Copyright 2023.</p>
+                        <p className='font-body text-[10px]'>&#169; Copyright {year}.</p>
                         <p className='font-body text-[10px]'>All rights reserved.<br /> BohemianCode-x.</p>
                     </div>
         </div>

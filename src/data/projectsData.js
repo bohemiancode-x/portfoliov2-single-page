@@ -1,9 +1,16 @@
 export const projectsData = [
     {
+      id: 11,
+      title: 'Project Aurora - Klusterthon 2023.',
+      info: 'Participated in a 3-week hackathon with the aim of creating a solution to simplify small business payments. Won silver medal after placing 2nd out of 300+ teams and 1,600+ participants.',
+      link: 'https://aurora-vx.vercel.app/',
+      git: 'https://github.com/omzi/aurora-v0'
+    },
+    {
       id: 10,
       title: 'Astro template for a barbershop business',
       info: 'Built on astro, a landing page template for a haircut service business.',
-      link: 'https://astro-barber-x.vercel.app//',
+      link: 'https://astro-barber-x.vercel.app/',
       git: 'https://github.com/bohemiancode-x/astro-barber-x'
     },
     {
@@ -14,18 +21,18 @@ export const projectsData = [
       git: 'https://github.com/bohemiancode-x/ipfs-practical'
     },
     {
+      id: 2,
+      title:'Single e-commerce page',
+      info: 'Built a responsive single product page for a senakers shop using ReactJS, tailwindcss, redux toolkit and some other npm packages like lightbox.',
+      link: 'http://single-ecommerce-page.vercel.app/',
+      git: 'https://github.com/bohemiancode-x/single-ecommerce-page'
+    },
+    {
         id: 1,
         title:'Rock, Paper, Scissors game',
         info: 'A simple rock, paper and scissors game developed with the ReactJS framework and tailwindCSS.',
         link: 'https://rock-paper-scissors-game-e5vy.vercel.app/',
         git: 'https://github.com/bohemiancode-x/rock-paper-scissors-game'
-      },
-      {
-        id: 2,
-        title:'Single e-commerce page',
-        info: 'Built a responsive single product page for a senakers shop using ReactJS, tailwindcss, redux toolkit and some other npm packages like lightbox.',
-        link: 'http://single-ecommerce-page.vercel.app/',
-        git: 'https://github.com/bohemiancode-x/single-ecommerce-page'
       },
       {
         id: 3,

@@ -12,6 +12,8 @@ export default function Sidebar({ toggleNav, nav }) {
     const { changeMode, mode } = useTheme()
     const [date, setDate] = useState('');
 
+    const year = new Date().getFullYear()
+
     const getDate = () => {
         let newDate = new Date();
         setDate(dayjs(newDate).format('MMM D, h:mm A'))
@@ -26,10 +28,10 @@ export default function Sidebar({ toggleNav, nav }) {
     },[date]);
   
 
-    const toggleMode = () => {
-        changeMode(mode === 'dark' ? 'light' : 'dark');
-        //localStorage.setItem("mode", mode)
-    }
+    // const toggleMode = () => {
+    //     changeMode(mode === 'dark' ? 'light' : 'dark');
+    //     //localStorage.setItem("mode", mode)
+    // }
 
   return (
     <section className=''>
@@ -64,7 +66,7 @@ export default function Sidebar({ toggleNav, nav }) {
             <h2 className='text-center font-body font-bold text-2xl mt-3 opacity-80'>Emmanuel Adisa</h2>
             
             <p className='text-center font-body text-[#777] text-base'>FOLIO</p>
-            <p className='text-center text-[#777] font-body text-sm'>2021 - 2023.</p> 
+            <p className='text-center text-[#777] font-body text-sm'>2021 - {year}.</p> 
         </div>
 
         <div>
@@ -78,7 +80,7 @@ export default function Sidebar({ toggleNav, nav }) {
         </div> 
 
         <div className='mt-[40%] opacity-50'>
-            <p className='font-body text-sm'>&#169; Copyright 2023.</p>
+            <p className='font-body text-sm'>&#169; Copyright {year}.</p>
             <p className='font-body text-sm'>All rights reserved.<br /> BohemianCode-x.</p>
         </div>
 

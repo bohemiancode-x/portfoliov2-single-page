@@ -53,7 +53,7 @@ export default function Home({ pageIsVisible }) {
                     </button>
                     </Link>
                     
-                    <a href='https://drive.google.com/file/d/1aziD84c5gHa7Dl2Bw_ZJTWTwRRdQbr6A/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='button font-body'>
+                    <a href='https://docs.google.com/document/d/1HQ3bz_FosLo_gorM9UN5dfOdODHE8-kCv0Gb-xMw568/edit?usp=sharing' target="_blank" rel="noopener noreferrer" className='button font-body'>
                         DOWNLOAD CV
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 md:w-6 md:h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
