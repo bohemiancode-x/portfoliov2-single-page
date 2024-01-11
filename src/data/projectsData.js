@@ -3,7 +3,7 @@ export const projectsData = [
       id: 11,
       title: 'Project Aurora - Klusterthon 2023.',
       info: 'Participated in a 3-week hackathon with the aim of creating a solution to simplify small business payments. Won silver medal after placing 2nd out of 300+ teams and 1,600+ participants.',
-      link: 'https://aurora-vx.vercel.app/',
+      link: 'https://aurora-v0.vercel.app/',
       git: 'https://github.com/omzi/aurora-v0'
     },
     {
