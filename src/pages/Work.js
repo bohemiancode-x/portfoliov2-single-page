@@ -14,10 +14,16 @@ export default function Work() {
           <h2 className='mt-5 font-body tracking-widest text-2xl font-bold'>Experiences</h2>
         </div>
         <div className='flex flex-col gap-5 px-5 py-5 lg:px-10'>
-        
+        <WorkCard
+          coy="J3C"
+          job="Front-End Engineer"
+          time="January, 2024 - Present"
+          location="Remote"
+          desc="Developing multiple seamless front-end facing user features to actively improve user engagement while also leveraging knowlegde in system design, agile development, CI/CD, and programming in Typescript and NextJS."
+        />
         <WorkCard
           coy="IMMER"
-          job="Volunteer Front-end Developer"
+          job="Volunteer Front-End Developer"
           time="July, 2023 - Present"
           location="Remote"
           desc="Building the immer platform on the front-end using NextJs, TypeScript and TailwindCSS."

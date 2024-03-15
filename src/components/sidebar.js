@@ -39,10 +39,10 @@ export default function Sidebar({ toggleNav, nav }) {
         <div className='lg:hidden py-3 fixed w-full z-10 bg-white dark:bg-[#202124] flex items-center justify-between px-5'>
             <div className=''>
                 <button onClick={(e) => toggleNav(e)} data-toggle-nav data-open-nav={nav} className="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative z-[105]">
-                    <span id="line1" class="bg-white/70 w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear"></span> 
-                    <span id="line2" class="bg-white/70 w-6 origin-center  mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span> 
-                    <span id="line3" class="bg-white/70 w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span>                         
-                    <span class="sr-only">togglenav</span>
+                    <span id="line1" className="bg-white/70 w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear"></span> 
+                    <span id="line2" className="bg-white/70 w-6 origin-center  mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span> 
+                    <span id="line3" className="bg-white/70 w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear"></span>                         
+                    <span className="sr-only">togglenav</span>
                 </button>
             </div>
 
