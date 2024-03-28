@@ -42,12 +42,13 @@ export default function Work() {
           location="Remote"
           desc="Worked with a team of front-end developers to build an AI- powered webapp - SpeakBetter. Technologies used includes ReactJs, TailwindCSS, SASS, OpenAI."
         />
-          
-          <div className='font-body text-[#777]'>
-            <h2 className='font-body text-lg md:text-xl lg:text-2xl'> - FREELANCE PROJECTS <span className='font-body'>(2021 - Present.)</span></h2>
-            <p className='text-sm ml-10 mt-2 font-body w-[75%] md:w-[50%]'>Developing front-end features using HTML5, CSS3, JavaScript, React and other tools and frameworks.
-            </p>
-          </div>
+        <WorkCard 
+          coy="FREELANCE PROJECTS"
+          job="Front-end developer"
+          time="2021 - Present"
+          location="Remote"
+          desc="Developing front-end features using HTML5, CSS3, JavaScript, React, NextJS, TypeScript and other tools and frameworks."
+        />
           
         </div>
 
