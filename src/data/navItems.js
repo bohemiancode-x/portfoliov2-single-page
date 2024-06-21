@@ -16,16 +16,21 @@ export const navitems = [
     },
     {
         number: '3',
+        text: 'TESTIMONIALS',
+        path: 'testimonials'
+    },
+    {
+        number: '4',
         text: 'EDUCATION',
         path: 'education'
     },
     {
-        number: '4',
+        number: '5',
         text: 'CONTACT',
         path: 'contact'
     },
     {
-        number:'5',
+        number:'6',
         text: 'BLOG',
         path: 'blog'
     },

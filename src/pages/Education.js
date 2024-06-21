@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTheme } from "../hooks/useTheme";
 import {
   Accordion,
@@ -34,6 +34,15 @@ const education = [
 
 export default function Education() {
   const { mode } = useTheme();
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const handleAccordionClick = (index) => {
+    if (index !== openAccordion) {
+        setOpenAccordion(index);
+     } else {
+       setOpenAccordion(null);
+    }
+  };
 
   return (
     <div id='education' className={`py-20 px-2 lg:px-0 ${mode}`}>
@@ -43,22 +52,33 @@ export default function Education() {
         </div>
 
         <div className='mt-20 w-full px-3 lg:px-10'>
-          <Accordion  allowZeroExpanded className='mt-5'>
-            {education.map((item) => (
-                  <AccordionItem key={item.id} className='mt-3'>
-                  <AccordionItemHeading aria-level={3} className='flex justify-between lg:w-3/4 h-[3rem] py-6 px-1 items-center rounded bg-grey dark:bg-[#202124] dark:border-grey dark:border-2'>
-                      <AccordionItemButton className='accordion_button'>
-                          {item.header}
-                      </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                      <p className='font-body lg:w-3/4 p-3 mt-1 rounded border-2 dark:bg-[#777] border-grey'>
-                          {item.info}
+
+          <div className='accordion-container font-body mt-4 overflow-hidden'>
+              <ul className='flex flex-col gap-2'>
+              {education && education.map((item) => (
+                  <div key={item.id} className={`relative py-2 border-b border-[#979393] overflow-hidden group ${ openAccordion === item.id ? 'is-active' : ''}`}>
+                    <div 
+                        className={`text-light-green duration-300 cursor-pointer flex gap-2 lg:gap-5 items-center rounded py-2 lg:py-4`}
+                        onClick={() => handleAccordionClick(item.id)}
+                    >
+                        <p className='text-sm sm:text-base font-body lg:text-[20px]'>{item.header}</p>
+                        <span className={` ml-auto transition-all duration-300`}>
+                            <svg className="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="7" width="16" height="2" rx="1" className={ `${openAccordion === item.id ? 'rotate-180' : 'false'} transform origin-center transition duration-300 ease-out`}></rect>
+                              <rect y="7" width="16" height="2" rx="1" className={ `${openAccordion === item.id ? 'rotate-180' : 'false rotate-90'} transform origin-center transition duration-300 ease-out`}></rect>
+                            </svg>
+                        </span>
+                    </div>
+                    <div className={'-z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base lg:text-[20px] rounded p-0 transition-all duration-300 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0'}>
+                      <p className='font-body'>
+                        {item.info}
                       </p>
-                  </AccordionItemPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                    </div>
+                </div>
+              ))}
+              </ul>
+          </div>
+
         </div>
     </div>
   )

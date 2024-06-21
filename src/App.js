@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 
 //components
 import Sidebar from "./components/sidebar";
+import Testimonials from "./pages/Testimonials";
 
 function App() {
   const [nav, setNav] = useState(false);
@@ -35,6 +36,7 @@ function App() {
           <Home pageIsVisible={pageIsVisible} />
           <About myRef={myRef} />
           <Work />
+          <Testimonials />
           <Education />
           <Contact />
           <Blog />

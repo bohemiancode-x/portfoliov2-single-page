@@ -14,41 +14,48 @@ export default function Work() {
           <h2 className='mt-5 font-body tracking-widest text-2xl font-bold'>Experiences</h2>
         </div>
         <div className='flex flex-col gap-5 px-5 py-5 lg:px-10'>
-        <WorkCard
-          coy="J3C"
-          job="Front-End Engineer"
-          time="January, 2024 - Present"
-          location="Remote"
-          desc="Developing multiple seamless front-end facing user features to actively improve user engagement while also leveraging knowlegde in system design, agile development, CI/CD, and programming in Typescript and NextJS."
-        />
-        <WorkCard
-          coy="IMMER"
-          job="Volunteer Front-End Developer"
-          time="July, 2023 - Present"
-          location="Remote"
-          desc="Building the immer platform on the front-end using NextJs, TypeScript and TailwindCSS."
-        />
-        <WorkCard
-          coy="CTA FINTECH SOLUTIONS"
-          job="Contract Front-end Developer"
-          time="March 2023 - July, 2023"
-          location="Remote"
-          desc="Developed and maintained web project for a startup fintech solutions company based in South Africa and U.K using ReactJS and TailwindCSS."
-        />
-        <WorkCard 
-          coy="HNG i9 by Zuri and HotelsNG"
-          job="Frontend Intern"
-          time="Nov 2022 - Jan, 2023"
-          location="Remote"
-          desc="Worked with a team of front-end developers to build an AI- powered webapp - SpeakBetter. Technologies used includes ReactJs, TailwindCSS, SASS, OpenAI."
-        />
-        <WorkCard 
-          coy="FREELANCE PROJECTS"
-          job="Front-end developer"
-          time="2021 - Present"
-          location="Remote"
-          desc="Developing front-end features using HTML5, CSS3, JavaScript, React, NextJS, TypeScript and other tools and frameworks."
-        />
+          <WorkCard
+            coy="J3C"
+            job="Front-End Engineer"
+            time="January, 2024 - Present"
+            location="Remote"
+            desc="Developing multiple seamless front-end facing user features to actively improve user engagement while also leveraging knowlegde in system design, agile development, CI/CD, and programming in Typescript and NextJS."
+          />
+          <WorkCard
+            coy="RocketDevs (Freelance Agency)"
+            job="Front-End Engineer"
+            time="July, 2023 - Present"
+            location="Remote"
+            desc="Developed multiple front-end features and user interfaces to actively improve user experience and engagement for several clients. Coordinated with products, UI/UX and backend teams to bring clients’ vision from idea stage to fruition stage."
+          />
+          <WorkCard
+            coy="IMMER"
+            job="Volunteer Front-End Developer"
+            time="July, 2023 - January, 2024"
+            location="Remote"
+            desc="Building the immer platform on the front-end using NextJs, TypeScript and TailwindCSS."
+          />
+          <WorkCard
+            coy="CTA FINTECH SOLUTIONS"
+            job="Contract Front-end Developer"
+            time="March 2023 - July, 2023"
+            location="Remote"
+            desc="Developed and maintained web project for a startup fintech solutions company based in South Africa and U.K using ReactJS and TailwindCSS."
+          />
+          <WorkCard 
+            coy="HNG i9 by Zuri and HotelsNG"
+            job="Frontend Intern"
+            time="Nov 2022 - Jan, 2023"
+            location="Remote"
+            desc="Worked with a team of front-end developers to build an AI- powered webapp - SpeakBetter. Technologies used includes ReactJs, TailwindCSS, SASS, OpenAI."
+          />
+          <WorkCard 
+            coy="FREELANCE PROJECTS"
+            job="Front-end developer"
+            time="2021 - Present"
+            location="Remote"
+            desc="Developing front-end features using HTML5, CSS3, JavaScript, React, NextJS, TypeScript and other tools and frameworks."
+          />
           
         </div>
 
