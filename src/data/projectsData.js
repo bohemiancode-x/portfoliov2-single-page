@@ -7,6 +7,13 @@ export const projectsData = [
       git: 'https://github.com/omzi/aurora-v0'
     },
     {
+      id: 12,
+      title:'Sneakershop page with stripe checkout',
+      info: 'A Basic demonstration of payment gateway integration with stripe-hosted checkout (using test data). -UI: Next.js, tailwindcss, daisyUI.',
+      link: 'https://buy-shoes-with-stripe.vercel.app/',
+      git: 'https://github.com/bohemiancode-x/buy-shoes-with-stripe'
+    },
+    {
       id: 10,
       title: 'Astro template for a barbershop business',
       info: 'Built on astro, a landing page template for a haircut service business.',

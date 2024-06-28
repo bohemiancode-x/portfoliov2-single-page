@@ -1,12 +1,5 @@
 import React, { useState } from 'react'
 import { useTheme } from "../hooks/useTheme";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from 'react-accessible-accordion';
 
 
 const education = [
@@ -52,7 +45,6 @@ export default function Education() {
         </div>
 
         <div className='mt-20 w-full px-3 lg:px-10'>
-
           <div className='accordion-container font-body mt-4 overflow-hidden'>
               <ul className='flex flex-col gap-2'>
               {education && education.map((item) => (
@@ -69,7 +61,7 @@ export default function Education() {
                             </svg>
                         </span>
                     </div>
-                    <div className={'-z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base lg:text-[20px] rounded p-0 transition-all duration-300 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0'}>
+                    <div className={'-z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base rounded p-0 transition-all duration-300 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0'}>
                       <p className='font-body'>
                         {item.info}
                       </p>
