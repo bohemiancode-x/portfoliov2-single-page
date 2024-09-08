@@ -25,7 +25,7 @@ export default function Home({ pageIsVisible }) {
     
 
   return (
-        <section className={` ${mode}`}>
+    <section className={` ${mode}`}>
         <div id='home' className={`relative min-h-screen md:h-[100vh] pt-20 lg:pt-0 flex flex-col justify-center overflow-hidden `}>
             <div className="absolute flex items-center gap-5 top-3 right-3">
                 <a href='https://github.com/bohemiancode-x' target="_blank" rel="noopener noreferrer">
@@ -72,7 +72,7 @@ export default function Home({ pageIsVisible }) {
             </div>
         </div>
 
-        </section>
+    </section>
    
   )
 }

@@ -7,6 +7,13 @@ export const projectsData = [
       git: 'https://github.com/omzi/aurora-v0'
     },
     {
+      id: 13,
+      title: `Akerele Jumoke -  a designer's portfolio`,
+      info: 'Portfolio project for a top UI/UX designer developed with React.js and TailwindCSS.',
+      link: 'https://akerelejumoke.design',
+      // git: 'https://github.com/omzi/aurora-v0'
+    },
+    {
       id: 12,
       title:'Sneakershop page with stripe checkout',
       info: 'A Basic demonstration of payment gateway integration with stripe-hosted checkout (using test data). -UI: Next.js, tailwindcss, daisyUI.',
