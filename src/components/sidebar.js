@@ -81,7 +81,7 @@ export default function Sidebar({ toggleNav, nav }) {
 
         <div className='mt-[40%] opacity-50'>
             <p className='font-body text-sm'>&#169; Copyright {year}.</p>
-            <p className='font-body text-sm'>All rights reserved.<br /> BohemianCode-x.</p>
+            <p className='font-body text-sm'>All rights reserved.<br /> Emmanuel Adisa.</p>
         </div>
 
     </div>
