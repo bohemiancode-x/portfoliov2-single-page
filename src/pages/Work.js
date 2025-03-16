@@ -15,18 +15,18 @@ export default function Work() {
         </div>
         <div className='flex flex-col gap-5 px-5 py-5 lg:px-10'>
           <WorkCard
-            coy="J3C"
-            job="Front-End Engineer"
-            time="January, 2024 - Present"
-            location="Remote"
-            desc="Developing multiple seamless front-end facing user features to actively improve user engagement while also leveraging knowlegde in system design, agile development, CI/CD, and programming in Typescript and NextJS."
-          />
-          <WorkCard
             coy="RocketDevs (Freelance Agency)"
             job="Front-End Engineer"
             time="July, 2023 - Present"
             location="Remote"
             desc="Developed multiple front-end features and user interfaces to actively improve user experience and engagement for several clients. Coordinated with products, UI/UX and backend teams to bring clients’ vision from idea stage to fruition stage."
+          />
+          <WorkCard
+            coy="J3C"
+            job="Front-End Engineer"
+            time="January, 2024 - Dec, 2024"
+            location="Remote"
+            desc="Developing multiple seamless front-end facing user features to actively improve user engagement while also leveraging knowlegde in system design, agile development, CI/CD, and programming in Typescript and NextJS."
           />
           <WorkCard
             coy="IMMER"
